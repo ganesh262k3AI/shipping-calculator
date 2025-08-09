@@ -1,8 +1,11 @@
 
 
 function calculation() {
+
     const inputElement = document.querySelector('.input-element');
-    let cost = Number(inputElement.value); 
+  
+  let cost = Number(inputElement.value);
+
 if(cost != Number(inputElement.value)){
  document.querySelector('.total').innerHTML =`please enter valid cost`
  return
