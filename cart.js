@@ -1,8 +1,4 @@
-function keyDown(event) {
-    if (event.key === "Enter") {
-        calculation();
-    }
-}
+
 
 function calculation() {
     const inputElement = document.querySelector('.input-element');
@@ -18,4 +14,10 @@ if(cost != Number(inputElement.value)){
     }
 
     document.querySelector('.total').innerHTML = `Total Cost : $${cost}`;
+}
+
+function keyDown(event) {
+    if (event.key === "Enter") {
+        calculation();
+    }
 }
