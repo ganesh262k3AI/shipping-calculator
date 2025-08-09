@@ -1,0 +1,85 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling with a unique gradient */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  color: #2c3e50;
+}
+
+/* Header */
+.header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.sub-head {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+/* Input */
+.input-element {
+  padding: 12px 15px;
+  width: 260px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.input-element:focus {
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+/* Button */
+.button1 {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #2c3e50;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Total display */
+.total {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Error style */
+.total.error {
+  color: #e74c3c;
+}
